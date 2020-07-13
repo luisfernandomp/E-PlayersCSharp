@@ -17,7 +17,7 @@ namespace E_Players.Models
         }
         public void Create(Equipe _equipe)
         {
-            string[] Linhas = { PrepararLinha(_equipe)}
+            string[] Linhas = { PrepararLinha(_equipe)};
             File.AppendAllLines(PATH, Linhas);
         }
         private string PrepararLinha(Equipe _equipe){
