@@ -20521,6 +20521,11 @@
   "RootNamespace": "E_Players",
   "Documents": [
     {
+      "FilePath": "c:\\Users\\HOME\\Documents\\E-Players\\Views\\Equipe\\index.cshtml",
+      "TargetPath": "Views\\Equipe\\index.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "c:\\Users\\HOME\\Documents\\E-Players\\Views\\Shared\\Error.cshtml",
       "TargetPath": "Views\\Shared\\Error.cshtml",
       "FileKind": "mvc"
