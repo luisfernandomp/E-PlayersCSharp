@@ -58,7 +58,7 @@ namespace E_Players.Controllers
         }
 
         [Route("Equipe/{id}")]
-        public ActionResult Excluir(int id){
+        public IActionResult Excluir(int id){
             equipeModel.Delete(id);
             ViewBag.Equipes = equipeModel.ReadAll();
             return LocalRedirect("~/Equipe");
