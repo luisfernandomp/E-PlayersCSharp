@@ -26,7 +26,7 @@ namespace E_Players.Models
         public void Delete(int _IdEquipe)
         {
             List<string> linhas = ReadAllLinesCSV(PATH);
-            linhas.RemoveAll(y => y.Split(";")[0] == IdEquipe.ToString());
+            linhas.RemoveAll(y => y.Split(";")[0] == _IdEquipe.ToString());
             RewriteCSV(PATH, linhas);
         }
 
