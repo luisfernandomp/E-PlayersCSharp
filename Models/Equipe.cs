@@ -54,5 +54,7 @@ namespace E_Players.Models
             linhas.Add(PrepararLinha(_equipe));
             RewriteCSV(PATH, linhas);
         }
+
+         
     }
 }

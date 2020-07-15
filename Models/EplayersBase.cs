@@ -33,7 +33,7 @@ namespace E_Players.Models
 
         public void RewriteCSV(string PATH, List<string> linhas)
         {
-            using(StreamWriter output = new StreamWriter(PATH))
+             using(StreamWriter output = new StreamWriter(PATH))
             {
                 foreach (var item in linhas)
                 {
