@@ -1,0 +1,591 @@
+/* Declaração de variáveis no CSS
+    * :root
+*/
+:root{  
+    /* Nome das variáveis  */
+   --background: #1e1c21;
+   --pink: #fc1e8b;
+   --purple: #7278c3;
+   --blue: #00a8dc;
+}
+*{
+   padding: 0;
+   margin: 0;
+}
+body{
+   background-color: var(--background);
+   font-family: 'Titillium Web', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+   color: white;
+}
+a{
+   text-decoration: none;
+   color: white;
+}
+.gradient{
+   background: rgba(252,30,137,1);
+   background: -moz-linear-gradient(left, rgba(252,30,137,1) 0%, rgba(114,119,195,1) 100%);
+   background: -webkit-gradient(left top, right top, color-stop(0%, rgba(252,30,137,1)), color-stop(100%, rgba(114,119,195,1)));
+   background: -webkit-linear-gradient(left, rgba(252,30,137,1) 0%, rgba(114,119,195,1) 100%);
+   background: -o-linear-gradient(left, rgba(252,30,137,1) 0%, rgba(114,119,195,1) 100%);
+   background: -ms-linear-gradient(left, rgba(252,30,137,1) 0%, rgba(114,119,195,1) 100%);
+   background: linear-gradient(to right, rgba(252,30,137,1) 0%, rgba(114,119,195,1) 100%);
+   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fc1e89', endColorstr='#7277c3', GradientType=1 );
+}
+.container{
+   width: 80%;
+   max-width: 1200px;
+   margin: 0px auto;
+}
+header .container{  
+   display: flex;
+   justify-content: space-between;
+   padding: 20px 0px;
+}
+header ul{
+   display: flex;
+   list-style-type: none;
+   justify-content: space-between;
+   flex-flow: wrap;
+}
+header nav{
+   width: 60%;
+}
+header a{
+   text-transform: uppercase;
+}
+header img{
+   margin-right: 100px;
+}
+.partidas{
+   text-align: center;
+   width: 100%;
+   min-height: 100px;
+   background: rgba(66,44,90,1);
+   background: -moz-linear-gradient(top, rgba(66,44,90,1) 0%, rgba(16,15,17,1) 100%);
+   background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(66,44,90,1)), color-stop(100%, rgba(16,15,17,1)));
+   background: -webkit-linear-gradient(top, rgba(66,44,90,1) 0%, rgba(16,15,17,1) 100%);
+   background: -o-linear-gradient(top, rgba(66,44,90,1) 0%, rgba(16,15,17,1) 100%);
+   background: -ms-linear-gradient(top, rgba(66,44,90,1) 0%, rgba(16,15,17,1) 100%);
+   background: linear-gradient(to bottom, rgba(66,44,90,1) 0%, rgba(16,15,17,1) 100%);
+   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#422c5a', endColorstr='#100f11', GradientType=0 );
+}
+.partidas .container{
+   display: flex;
+   justify-content: space-around;
+   align-items: center;
+   flex-flow: wrap;
+} 
+.proximas_partidas{
+   display: flex;
+   align-items: flex-end;
+   justify-content: space-between;
+}
+.partida{
+   padding: 0px 0px 10px 10px;
+}
+.partida img{
+   width: 40px;
+   padding: 0 8px;
+}
+.partida h2{
+   font-size: 16px;
+   text-align: start;
+   padding: 10px 0px;
+}
+.partida div{
+   display: flex;
+   align-items: center;
+   padding: 10px 0px;
+}
+.red{
+   color: red;
+}
+.banner{
+   width: 100%;
+   height: 400px;
+   background-position: center;
+   background-size: cover;
+   background-image: url("../images/meta_mundo.jpg");
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+.ligas{
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   padding: 6px 0px 0;    
+}
+.ligas img{
+   height: 143px;
+}
+.ligas h4{
+   text-transform: uppercase;
+   font-size: 45px;
+}
+.ligas h3{
+   text-transform: uppercase;
+   font-size: 90px;
+   line-height: 40px;
+}
+.ligas div{
+   margin-bottom: 45px;
+}
+.sobre{
+   position: relative;
+   display: flex;
+   margin-top: 40px;
+}
+.sobre_fundo{
+   background-position: center;
+   background-attachment: fixed;
+   background-size: cover;
+   width: 100%;
+   min-height: 700px;
+   background-image: url(../images/Teams/T6.jpg);
+   clip-path: polygon(0 10%, 100% 0%, 100% 90%, 0% 100%);
+}
+.sobre_fundo_filtro{
+   display: flex;
+   justify-content: flex-end;
+   align-items: center;
+   width: 100%;
+   height: 100%;
+   background-color: rgba(71, 61, 139, 0.685);
+}
+.sobre img{
+   position: absolute;
+   z-index: 3;
+   left: 220px;
+   top: 3px;
+   width: 100%;
+   max-width: 46%;
+}
+.texto_sobre{
+   width: 30%;
+   margin-right: 250px;
+   text-align: right;
+   text-shadow: rgba(0, 0, 0, 0.349) 0.1em 0.1em 0.9em
+}
+.texto_sobre h2{
+   font-size: 40px;
+}
+.texto_sobre p{
+   font-size: 20px;
+}
+.content{
+   display: flex;
+   margin-top: 50px;
+   margin-bottom: 50px;
+   justify-content: space-between;
+
+}
+.content section{
+   width: 70%;
+}
+.card{
+   width: 100%;
+   margin-bottom: 2em;
+   box-shadow: 0px 3px 10px black;
+   display: flex;
+   justify-content: flex-start;
+   background: rgb(0,0,0);
+   background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(30,28,33,1) 30%, rgba(30,28,33,1) 100%);
+}
+.card img{
+   width: 220px;
+   height: 220px;
+   object-fit: cover;
+   /* Cobre todo o obejto */
+}
+.card div{
+   padding: 2em;
+}
+.card div:hover{
+   color: var(--background);
+   background-color: var(--pink);
+   transition-duration: 0.5s;
+   transition-timing-function: ease-in;
+}
+.content h3{
+   text-transform: uppercase;
+   padding: 1em 0;
+   font-size: 1.8em;
+}
+.content article{
+   width: 25%;
+}
+.textos_noticias{
+   display: flex;
+   flex-direction: column;
+   text-align: left;
+   justify-content: center;
+}
+.resultados_box{
+   padding: 2em;
+   box-shadow: 0px 3px 10px black;
+}
+.resultado div{
+   display: flex;
+   align-items: center;
+   justify-content: space-evenly;
+}
+.resultado{
+   text-align: center;
+   margin-bottom: 2em;
+}
+.resultado img{
+   width: 47px;
+}
+.resultado p{
+   font-size: 2em;
+   margin: 0.1em 0;
+}
+footer{
+   background-color: black;
+   /* background: rgb(0,0,0); */
+   /* background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(30,28,33,1) 30%, rgba(30,28,33,1) 100%); */
+   min-height: 250px;
+   padding: 2em 0;
+   box-shadow: 0px -6px 10px black;
+}
+footer .container{
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+}
+footer nav h3 {
+   color: #646464;
+   font-size: 1.6em;
+   margin-bottom: 1em;
+}
+footer nav ul{
+   list-style-type: none;
+}
+footer nav li{
+   margin: 0.5em 0;
+   font-size: 1em;
+}
+footer nav a:hover{
+   color: var(--purple);
+}
+/* Ícones rodapé */
+.social_media{
+   display: flex;
+   margin-top: 0.6em;
+   justify-content: space-between;
+   background: linear-gradient(to bottom, rgba(252,30,137,1) 0%, rgba(114,119,195,1) 100%);
+   -webkit-background-clip: text;
+   -webkit-text-fill-color: transparent; 
+   font-size: 2.5em;
+}
+/* Início configuração form do rodapé */
+footer form{
+   display: flex;
+   flex-direction: column;
+}
+footer form label{
+   font-size: 1.5em;
+   margin-bottom: 0.4em;
+   font-weight: bold;
+   color: #646464;
+}
+footer form input{
+   height: 2em;
+   outline: none;
+   width: 15em;
+}
+.btn{
+   height: 2.3em;
+   /* padding: 0px 10px; */
+   text-decoration: none ;
+   border: none;
+   margin-left: -3.9px;
+   color: white;
+   padding: 0em 1.8em;
+}
+footer p{
+   text-align: center;
+   font-size: 1em;
+   color: #6f6f6f;
+   text-transform: uppercase;
+}
+.banner_cadastro{
+   width: 100%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   height: 273px;
+   text-transform: uppercase;
+   font-size: 30px;
+   background-size: cover;
+   background-position: bottom;
+   background-image: url(../images/topo-cadastro.png);
+}
+.form_cadastro{
+   width: 100%;
+   padding: 80px;
+   max-width: 400px;
+   margin: 10em auto;
+   box-shadow: -1px 4px 5px #000, -1px -6px 10px #7278c3    ;
+   border-radius: 10px;
+}
+.campo{
+   display: flex;
+   justify-content: space-between;
+   margin-bottom: 1em;
+}
+.campo label, fieldset{
+   text-transform: uppercase;
+   font-size: 1em;
+}
+.campo fieldset{
+   border: none;
+
+}
+input[type="text"], 
+input[type="password"],
+.campo input[type="email"],
+input[type="date"],
+select{
+   border: none;
+   width: 50%;
+   outline: none;
+   border-bottom: solid 1px var(--pink);
+   color: #ccc;
+   background-color: #1e1c21;
+}
+.campo input:focus{
+   background-color: var(--pink);
+}
+.campo fieldset label{
+   margin: 1em 1em 3em 0;
+}
+.cadastro{
+   text-align: center;
+   font-size: 15px;
+   font-weight: bold;
+   margin: 0 auto;
+}
+.btn{
+   margin-top: 20px;
+}
+header .fa-bars{
+   display: none;
+}
+/* 
+
+   .form_cadastro .campo:nth-last-child(n) button{
+       margin:auto;
+   } 
+
+*/
+
+/* 
+   justify-content: unset; PESQUISAR O QUE FAZ */
+
+
+/* Início Responsividade */
+/*  1200px */
+@media(max-width: 1200px){
+.content{
+   margin-top: 30px;
+}
+.sobre img{
+   position: absolute;
+   z-index: 3;
+   width: 100%;
+   left: 0px;
+   top: 0px;
+   max-width: 50%;
+}
+.texto_sobre h2{
+   font-size: 40px;
+}
+.texto_sobre {
+   width: 45%;
+   margin-right: 150px;
+}
+}/* Fim Media Query 1200px */
+@media(max-width: 800px){
+   .container{
+       width: 90%;
+   }
+   header .container img{
+       max-width: 180px;
+   }
+   .partidas .container{
+       flex-flow: nowrap;
+   }
+   .em_andamento{
+       width: 30%;
+       align-items: center;
+       margin-right: 100px;
+   }
+   .proximas_partidas{
+       width: 70%;
+       flex-flow: wrap;
+   }
+   .sobre img{
+       position: absolute;
+       z-index: 3;
+       width: 100%;
+       left: -95px;
+       top: 10px;
+       max-width: 80%;
+   }
+   .texto_sobre h2{
+       font-size: 25px;
+   }
+   .texto_sobre {
+       width: 50%;
+       margin-right: 25px;
+   }
+   .texto_sobre p{
+       font-size: 18px;
+   }
+   .ligas h4{
+       font-size: 30px;
+   }
+   .ligas h3{
+       height: 60px;
+   }
+   .ligas img{
+       height: 90px;
+   }
+   .card img{
+       margin-top: 2.5em;
+       margin-left: 1em;
+   }
+   footer form label {
+       font-size: 1em;
+       margin-bottom: -1em;
+   }
+   footer form input {
+       width: 10em;
+   }
+   .social_media{
+       display: flex;
+       justify-content: space-around;
+   }
+   .social_media i{
+       font-size: 30px;
+   }
+}
+
+/* CELULARES */
+@media(max-width: 460px){
+   .container{
+       width: 100%;
+   } 
+   header .container{  
+       display: flex;
+       justify-content: space-evenly;
+       padding: 20px 0px;
+   }
+   header .fa-bars{
+       color: var(--purple);
+       font-size: 3em;
+       display: block;
+   }
+   header img {
+       margin-right: 160px;
+   }
+   header .container .icon_mobile{
+       display: flex;
+       align-items: center;
+       justify-content: space-around;
+   }
+   header .container .icon_mobile a{
+       margin-left: 6em;
+   }
+   .sobre img{
+       display: none;
+   }
+   #menu{
+       position: absolute;
+       top: 5.5em;
+       left: 0px;
+       width: 100%;
+       background-color: var(--purple);
+       display: none;
+   }
+   #menu ul{
+       flex-direction: column;
+       height: 300px;
+       margin-left: 1em;
+   }
+   #menu a{
+       display: block;
+       padding: 0.5em 0;
+   }
+   .partidas .container{
+       width: 96%;
+       justify-content: center;
+   }
+   .texto_sobre {
+       text-align: end;
+       width: 90%;
+   }
+   .texto_sobre h2{
+       font-size: 2em;
+       font-weight: bold;
+   }
+   .banner {
+       height: 350px;
+   }
+   .banner img{
+       max-width: 100px;
+   }
+   .ligas{
+       display: flex;
+       flex-direction: column;
+       justify-content: center;
+       align-items: center;
+       flex-flow: wrap;
+       padding: 6px 0px 0;    
+   }
+   .ligas img{
+       height: 120px;
+       padding: 10px 20px;
+   }
+   .ligas div{
+       margin-top: 15px;
+       margin-bottom: 15px;
+   }
+   .ligas .text_ligas{
+       width: 100%;
+       text-align: center;
+   }
+   .ligas h4 {
+       font-size: 44px;
+   }
+   .content{
+       flex-direction: column;
+       width: 100%;
+       align-items: center;
+   }
+   .content article{
+       width: 100%;
+   }
+   .content section{
+       width: 85%;
+       margin: auto;
+   }
+   .card{
+       
+       display: flex;
+       flex-direction: column;
+       margin-bottom: 1em;
+   }
+   .card img{
+       width: 100%;
+       margin: 0;
+   }
+   .card div{
+       padding: 15px 15px;
+   }
+   .content h3{
+       text-align: center;
+   }
+}

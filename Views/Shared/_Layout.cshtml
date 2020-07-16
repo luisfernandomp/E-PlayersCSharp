@@ -1,50 +1,74 @@
 ﻿<!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>@ViewData["Title"] - E_Players</title>
-    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
-    <link rel="stylesheet" href="~/css/site.css" />
+    <link rel="stylesheet" href="~/css/style.css" />
+    <link href="https://fonts.googleapis.com/css?family=Titillium+Web:400,700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/2faae0d38b.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <header>
-        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
-            <div class="container">
-                <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">E_Players</a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse" aria-controls="navbarSupportedContent"
-                        aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="navbar-collapse collapse d-sm-inline-flex flex-sm-row-reverse">
-                    <ul class="navbar-nav flex-grow-1">
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Equipe" asp-action="Index">Equipe</a>
-                        </li>
-                    </ul>
-                </div>
+        <div class="container">
+            <div class="icon_mobile">
+                <a href="#" onclick="botaoMenu()">
+                    <i class="fas fa-bars"></i>
+                </a>
+                <a asp-controller="Home" asp-action="Index" title="Acessar a página inicial do site.">
+                    <img src="images/Logo.svg" alt="Logo do site E-Players.">
+                </a>
             </div>
-        </nav>
+            <nav id="menu">
+                <ul>
+                    <li><a asp-controller="Home" asp-action="Index" title="Acessar página inicial.">Início</a></li>
+                    <li><a href="#sobre" title="Acessar sessão sobre o projeto.">Sobre</a></li>
+                    <li><a href="#noticias" title="Acessar sessão de notícias.">Notícias</a></li>
+                    <li><a asp-controler="Equipe" asp-action="Index" title="Acessar página de cadastro.">Cadastre-se</a></li>
+                    @* <li><a href="login.html" title="Acessar página de login.">Login</a></li> *@
+                    <li>
+                        <a href="#" title="Realizar busca no site.">
+                            <i class="fas fa-search"></i>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
     </header>
-    <div class="container">
         <main role="main" class="pb-3">
             @RenderBody()
         </main>
-    </div>
-
-    <footer class="border-top footer text-muted">
+    <footer>
         <div class="container">
-            &copy; 2020 - E_Players - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
-        </div>
+            <nav>
+                <h3>Páginas</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="cadastro.html">Cadastre-se</a></li>
+                    <li><a href="#">Campeonatos</a></li>
+                    <li><a href="#">Políticas de Privacidade</a></li>
+                    <li><a href="#">Fale conosco</a></li>
+                </ul>
+            </nav>
+            <div>
+                <img src="images/Logo.svg" alt="Logo do projeto E-Players.">
+                <div class="social_media">  
+                        <i class="fab fa-facebook"></i>
+                        <i class="fab fa-instagram"></i>
+                        <i class="fab fa-twitter"></i>
+                        <i class="fab fa-youtube"></i>
+                </div>
+            </div>
+            <form action="#" method="GET">
+                <label for="input_nome">Entre para a lista vip</label>
+                <div>
+                    <input type="email" id="input_nome" name="email_usuario" required>
+                    <button type="submit" class="gradient btn">Enviar</button>
+                </div>
+            </form>
+        </div> <!-- Fim container -->
+        <p> &copy; COPYRIGHT - Todos os direitos reservados E-Players.</p>
     </footer>
-    <script src="~/lib/jquery/dist/jquery.min.js"></script>
-    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script src="~/js/site.js" asp-append-version="true"></script>
     @RenderSection("Scripts", required: false)
 </body>
