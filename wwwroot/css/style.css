@@ -322,6 +322,18 @@ footer p{
    background-position: bottom;
    background-image: url(../images/topo-cadastro.png);
 }
+.tb{
+   display: flex;
+   justify-content: center;
+   margin-bottom: 30px;
+}
+table, td, tr{
+   padding: 5px;
+   border: 1px solid var(--pink);
+}
+tr img{
+   max-width: 50px;
+}
 textarea{
    resize: none;
    background-color: var(--background);

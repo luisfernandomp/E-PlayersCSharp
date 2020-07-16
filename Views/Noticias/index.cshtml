@@ -33,18 +33,9 @@
     
     <button class="gradient btn cadastro" type="submit">Cadastrar</button>   
 </form>
-                @foreach (Noticias item in ViewBag.Noticias)
-                    {    
-                        <div class="card">
-                            <img src="img/Noticias/@item.Imagem" alt="@item.Titulo">
-                            <div class="textos_noticias">
-                                <h4>@item.Titulo</h4>
-                                <p>@item.Texto</p>
-                            </div>
-                        </div>
-                    }
 
-<table class="table table-striped table-responsive">
+<div class="tb">
+<table>
     <thead>
         <th>Id</th>
         <th>Título</th>
@@ -69,3 +60,4 @@
         }
     </tbody>
 </table> 
+</div>
