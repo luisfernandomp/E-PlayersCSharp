@@ -23,8 +23,8 @@
                 <ul>
                     <li><a asp-controller="Home" asp-action="Index" title="Acessar página inicial.">Início</a></li>
                     <li><a href="#sobre" title="Acessar sessão sobre o projeto.">Sobre</a></li>
-                    <li><a href="#noticias" title="Acessar sessão de notícias.">Notícias</a></li>
-                    <li><a asp-controler="Equipe" asp-action="Index" title="Acessar página de cadastro.">Cadastre-se</a></li>
+                    <li><a asp-controller="Noticias" asp-action="Index" title="Acessar sessão de notícias.">Notícias</a></li>
+                    <li><a asp-controller="Equipe" asp-action="Index" title="Acessar página de cadastro.">Cadastre-se</a></li>
                     @* <li><a href="login.html" title="Acessar página de login.">Login</a></li> *@
                     <li>
                         <a href="#" title="Realizar busca no site.">
@@ -43,8 +43,8 @@
             <nav>
                 <h3>Páginas</h3>
                 <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="cadastro.html">Cadastre-se</a></li>
+                    <li><a asp-controller="Home" asp-action="Index">Home</a></li>
+                    <li><a asp-controller="Equipe" asp-action="Index">Cadastre-se</a></li>
                     <li><a href="#">Campeonatos</a></li>
                     <li><a href="#">Políticas de Privacidade</a></li>
                     <li><a href="#">Fale conosco</a></li>

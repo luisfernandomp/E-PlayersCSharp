@@ -35,3 +35,4 @@ C:\Users\HOME\Documents\E-Players\obj\Debug\netcoreapp3.1\E-Players.dll
 C:\Users\HOME\Documents\E-Players\obj\Debug\netcoreapp3.1\E-Players.pdb
 C:\Users\HOME\Documents\E-Players\obj\Debug\netcoreapp3.1\E-Players.genruntimeconfig.cache
 C:\Users\HOME\Documents\E-Players\obj\Debug\netcoreapp3.1\E-Players.csproj.CopyComplete
+C:\Users\HOME\Documents\E-Players\obj\Debug\netcoreapp3.1\Razor\Views\Noticias\index.cshtml.g.cs
