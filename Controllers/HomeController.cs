@@ -11,6 +11,7 @@ namespace E_Players.Controllers
 {
     public class HomeController : Controller
     {
+        Noticias ntModel = new Noticias();
         private readonly ILogger<HomeController> _logger;
 
         public HomeController(ILogger<HomeController> logger)
@@ -20,6 +21,7 @@ namespace E_Players.Controllers
 
         public IActionResult Index()
         {
+            ViewBag.Noticias = ntModel.ReadAll();
             return View();
         }
 

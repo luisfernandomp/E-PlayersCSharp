@@ -94,27 +94,17 @@
             <div class="container content">
                 <section>
                     <h3 id="noticias">Notícias</h3>
-                     <div class="card">
-                        <img src="images/Teams/T1.jpeg" alt="Imagem represetando a primeira equipe.">
+
+                    @foreach (Noticias item in ViewBag.Noticias)
+                    {
+                    <div class="card">
+                        <img src="img/Noticias/@item.Imagem" alt="Imagem represetando a primeira equipe.">
                         <div class="textos_noticias">
-                            <h4>Título da Notícia</h4>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus laudantium dolor beatae laborum atque cumque voluptatum, veritatis architecto porro. Quam, voluptates architecto quisquam odio at hic consequatur. Aut, ex nam!</p>
+                            <h4>@item.Titulo</h4>
+                            <p>@item.Texto</p>
                         </div>
                     </div>
-                    <div class="card">
-                        <img src="images/Teams/T1.jpeg" alt="Imagem represetando a primeira equipe.">
-                        <div class="textos_noticias">
-                            <h4>Título da Notícia</h4>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus laudantium dolor beatae laborum atque cumque voluptatum, veritatis architecto porro. Quam, voluptates architecto quisquam odio at hic consequatur. Aut, ex nam!</p>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <img src="images/Teams/T1.jpeg" alt="Imagem represetando a primeira equipe.">
-                        <div class="textos_noticias">
-                            <h4>Título da Notícia</h4>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus laudantium dolor beatae laborum atque cumque voluptatum, veritatis architecto porro. Quam, voluptates architecto quisquam odio at hic consequatur. Aut, ex nam!</p>
-                        </div>
-                    </div> 
+                    }
                 </section>
 
                 <article>
